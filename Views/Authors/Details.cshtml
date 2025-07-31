@@ -1,0 +1,78 @@
+﻿@model test3.Data.Author
+
+@{
+    ViewData["Title"] = "Chi tiết tác giả";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Tác giả</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Bio)
+        </dt>
+        <dd class="col-sm-9">
+            @if (!string.IsNullOrEmpty(Model.Bio))
+            {
+                <p>@Html.DisplayFor(model => model.Bio)</p>
+            }
+            else
+            {
+                <em>Chưa có thông tin tiểu sử</em>
+            }
+        </dd>
+    </dl>
+</div>
+
+<div class="mt-4">
+    <h5>Danh sách sách của tác giả (@Model.Books.Count sách)</h5>
+    @if (Model.Books.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead>
+                    <tr>
+                        <th>Tiêu đề</th>
+                        <th>Mô tả</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var book in Model.Books)
+                    {
+                        <tr>
+                            <td>@book.Title</td>
+                            <td>
+                                @if (!string.IsNullOrEmpty(book.Description))
+                                {
+                                    @(book.Description.Length > 100 ? book.Description.Substring(0, 100) + "..." : book.Description)
+                                }
+                            </td>
+                            <td>
+                                <a asp-controller="Book" asp-action="Details" asp-route-id="@book.BookId" class="btn btn-sm btn-outline-primary">Xem</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p><em>Tác giả này chưa có sách nào.</em></p>
+    }
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model?.AuthorId" class="btn btn-warning">Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+</div>
+

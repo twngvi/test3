@@ -1,0 +1,38 @@
+﻿@model test3.Data.Author
+
+@{
+    ViewData["Title"] = "Thêm tác giả mới";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Tác giả</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label">Tên tác giả</label>
+                <input asp-for="Name" class="form-control" required />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="Bio" class="control-label">Tiểu sử</label>
+                <textarea asp-for="Bio" class="form-control" rows="5" placeholder="Nhập tiểu sử của tác giả..."></textarea>
+                <span asp-validation-for="Bio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Tạo" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

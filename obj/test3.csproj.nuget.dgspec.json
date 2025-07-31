@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\test3.csproj": {}
+    "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\test3.csproj": {}
   },
   "projects": {
-    "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\test3.csproj": {
+    "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\test3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\test3.csproj",
+        "projectUniqueName": "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\test3.csproj",
         "projectName": "test3",
-        "projectPath": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\test3.csproj",
-        "packagesPath": "C:\\Users\\FPTSHOP\\.nuget\\packages\\",
-        "outputPath": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\obj\\",
+        "projectPath": "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\test3.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\FPTSHOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -63,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.18, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

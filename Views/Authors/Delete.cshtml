@@ -1,0 +1,60 @@
+﻿@model test3.Data.Author
+
+@{
+    ViewData["Title"] = "Xóa tác giả";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h3 class="text-danger">Bạn có chắc chắn muốn xóa tác giả này?</h3>
+<div>
+    <h4>Tác giả</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.Bio)
+        </dt>
+        <dd class="col-sm-9">
+            @if (!string.IsNullOrEmpty(Model.Bio))
+            {
+                @Html.DisplayFor(model => model.Bio)
+            }
+            else
+            {
+                <em>Chưa có thông tin tiểu sử</em>
+            }
+        </dd>
+        <dt class="col-sm-3">
+            Số sách
+        </dt>
+        <dd class="col-sm-9">
+            @Model.Books.Count sách
+        </dd>
+    </dl>
+
+    @if (Model.Books.Any())
+    {
+        <div class="alert alert-warning">
+            <strong>Cảnh báo:</strong> Tác giả này có @Model.Books.Count sách. Bạn cần xóa tất cả sách của tác giả trước khi xóa tác giả.
+        </div>
+
+        <div class="mt-3">
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </div>
+    }
+    else
+    {
+        <form asp-action="Delete" class="mt-3">
+            <input type="hidden" asp-for="AuthorId" />
+            <input type="submit" value="Xóa" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa tác giả này?')" />
+            <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        </form>
+    }
+</div>
+
