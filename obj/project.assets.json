@@ -4012,11 +4012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\test\\test3\\test3.csproj",
+      "projectUniqueName": "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\test3.csproj",
       "projectName": "test3",
-      "projectPath": "D:\\code\\test\\test3\\test3.csproj",
+      "projectPath": "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\test3.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\test\\test3\\obj\\",
+      "outputPath": "D:\\desktop copy\\ASP\\Giau\\test_git_midterm\\test3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
