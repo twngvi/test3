@@ -400,7 +400,6 @@ D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\staticwebassets
 D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\staticwebassets.development.json
 D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\test3.csproj.Up2Date
 D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\test3.dll
 D:\desktop copy\ASP\Giau\test_git_midterm\test3\obj\Debug\net8.0\refint\test3.dll
