@@ -1,0 +1,99 @@
+@model test3.Models.BookDetailsViewModel
+
+@{
+    ViewData["Title"] = "Xóa sách";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h2 class="mb-0">
+                        <i class="fas fa-exclamation-triangle"></i> @ViewData["Title"]
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        <h5 class="alert-heading">Cảnh báo!</h5>
+                        <p class="mb-0">Bạn có chắc chắn muốn xóa sách này? Hành động này không thể hoàn tác.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            @if (!string.IsNullOrEmpty(Model.CoverImagePath))
+                            {
+                                <img src="@Model.CoverImagePath" alt="@Model.Title" class="img-fluid rounded shadow" style="max-height: 250px; width: 100%; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 250px;">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-book fa-3x mb-2"></i>
+                                        <p class="small">Không có ảnh bìa</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <dl class="row">
+                                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Title):</dt>
+                                <dd class="col-sm-9">
+                                    <strong>@Html.DisplayFor(model => model.Title)</strong>
+                                </dd>
+
+                                <dt class="col-sm-3">Tác giả:</dt>
+                                <dd class="col-sm-9">@Html.DisplayFor(model => model.AuthorName)</dd>
+
+                                @if (!string.IsNullOrEmpty(Model.Description))
+                                {
+                                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Description):</dt>
+                                    <dd class="col-sm-9">
+                                        @if (Model.Description.Length > 200)
+                                        {
+                                            @(Model.Description.Substring(0, 200) + "...")
+                                        }
+                                        else
+                                        {
+                                            @Model.Description
+                                        }
+                                    </dd>
+                                }
+
+                                @if (!string.IsNullOrEmpty(Model.AuthorBio))
+                                {
+                                    <dt class="col-sm-3">Tiểu sử tác giả:</dt>
+                                    <dd class="col-sm-9">
+                                        @if (Model.AuthorBio.Length > 150)
+                                        {
+                                            @(Model.AuthorBio.Substring(0, 150) + "...")
+                                        }
+                                        else
+                                        {
+                                            @Model.AuthorBio
+                                        }
+                                    </dd>
+                                }
+                            </dl>
+                        </div>
+                    </div>
+
+                    <form asp-action="Delete" class="mt-4">
+                        <input type="hidden" asp-for="BookId" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">
+                                <i class="fas fa-arrow-left"></i> Quay lại
+                            </a>
+                            <a asp-action="Details" asp-route-id="@Model.BookId" class="btn btn-info me-md-2">
+                                <i class="fas fa-eye"></i> Xem chi tiết
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash"></i> Xác nhận xóa
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
