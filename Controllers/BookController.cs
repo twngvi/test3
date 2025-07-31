@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using test3.Data;
 using test3.Models;
+using test3.Helpers;
 
 namespace test3.Controllers
 {
@@ -16,11 +17,39 @@ namespace test3.Controllers
         }
 
         // GET: Book
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            var books = await _context.Books
+            var booksQuery = _context.Books
                 .Include(b => b.Author)
-                .Select(b => new BookViewModel
+                .AsQueryable();
+
+            // Áp dụng bộ lọc tìm kiếm nếu có
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                var searchTerm = searchString.Trim();
+                
+                // Lấy tất cả sách để áp dụng tìm kiếm fuzzy
+                var allBooks = await booksQuery.ToListAsync();
+                
+                var filteredBooks = allBooks.Where(b => 
+                    // Tìm kiếm chính xác trước
+                    b.Title.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    b.Author.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    (b.Description != null && b.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)) ||
+                    
+                    // Tìm kiếm không dấu
+                    SearchHelper.RemoveVietnameseDiacritics(b.Title).Contains(
+                        SearchHelper.RemoveVietnameseDiacritics(searchTerm), StringComparison.OrdinalIgnoreCase) ||
+                    SearchHelper.RemoveVietnameseDiacritics(b.Author.Name).Contains(
+                        SearchHelper.RemoveVietnameseDiacritics(searchTerm), StringComparison.OrdinalIgnoreCase) ||
+                    
+                    // Tìm kiếm fuzzy với ngưỡng 0.7
+                    SearchHelper.FuzzyContains(b.Title, searchTerm, 0.7) ||
+                    SearchHelper.FuzzyContains(b.Author.Name, searchTerm, 0.7) ||
+                    (b.Description != null && SearchHelper.FuzzyContains(b.Description, searchTerm, 0.6))
+                ).ToList();
+
+                var books = filteredBooks.Select(b => new BookViewModel
                 {
                     BookId = b.BookId,
                     Title = b.Title,
@@ -28,10 +57,31 @@ namespace test3.Controllers
                     CoverImagePath = b.CoverImagePath,
                     AuthorId = b.AuthorId,
                     AuthorName = b.Author.Name
-                })
-                .ToListAsync();
+                }).ToList();
 
-            return View(books);
+                // Truyền từ khóa tìm kiếm để hiển thị lại trong form
+                ViewData["SearchString"] = searchString;
+                ViewData["ResultCount"] = books.Count;
+
+                return View(books);
+            }
+            else
+            {
+                var books = await booksQuery
+                    .Select(b => new BookViewModel
+                    {
+                        BookId = b.BookId,
+                        Title = b.Title,
+                        Description = b.Description,
+                        CoverImagePath = b.CoverImagePath,
+                        AuthorId = b.AuthorId,
+                        AuthorName = b.Author.Name
+                    })
+                    .ToListAsync();
+
+                ViewData["ResultCount"] = books.Count;
+                return View(books);
+            }
         }
 
         // GET: Book/Details/5
