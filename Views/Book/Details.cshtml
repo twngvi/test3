@@ -1,0 +1,92 @@
+@model test3.Models.BookDetailsViewModel
+
+@{
+    ViewData["Title"] = "Chi tiết sách";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="mb-0">@ViewData["Title"]</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            @if (!string.IsNullOrEmpty(Model.CoverImagePath))
+                            {
+                                <img src="@Model.CoverImagePath" alt="@Model.Title" class="img-fluid rounded shadow" style="max-height: 400px; width: 100%; object-fit: cover;" />
+                            }
+                            else
+                            {
+                                <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 400px;">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-book fa-4x mb-3"></i>
+                                        <p>Không có ảnh bìa</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="text-primary mb-3">@Html.DisplayFor(model => model.Title)</h3>
+                            
+                            <div class="mb-4">
+                                <h5 class="text-secondary">Thông tin tác giả:</h5>
+                                <div class="border-start border-primary border-3 ps-3">
+                                    <h6 class="mb-1">@Html.DisplayFor(model => model.AuthorName)</h6>
+                                    @if (!string.IsNullOrEmpty(Model.AuthorBio))
+                                    {
+                                        <p class="text-muted mb-0">@Html.DisplayFor(model => model.AuthorBio)</p>
+                                    }
+                                    else
+                                    {
+                                        <p class="text-muted mb-0">Không có thông tin tiểu sử</p>
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <h5 class="text-secondary">Mô tả:</h5>
+                                @if (!string.IsNullOrEmpty(Model.Description))
+                                {
+                                    <div class="border-start border-success border-3 ps-3">
+                                        <p class="mb-0">@Html.DisplayFor(model => model.Description)</p>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="border-start border-secondary border-3 ps-3">
+                                        <p class="text-muted mb-0">Không có mô tả</p>
+                                    </div>
+                                }
+                            </div>
+
+                            @if (!string.IsNullOrEmpty(Model.CoverImagePath))
+                            {
+                                <div class="mb-4">
+                                    <h5 class="text-secondary">Đường dẫn ảnh bìa:</h5>
+                                    <div class="border-start border-info border-3 ps-3">
+                                        <small class="text-muted">@Html.DisplayFor(model => model.CoverImagePath)</small>
+                                    </div>
+                                </div>
+                            }
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <a asp-action="Index" class="btn btn-secondary me-md-2">
+                                    <i class="fas fa-list"></i> Danh sách sách
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@Model.BookId" class="btn btn-warning me-md-2">
+                                    <i class="fas fa-edit"></i> Chỉnh sửa
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@Model.BookId" class="btn btn-danger">
+                                    <i class="fas fa-trash"></i> Xóa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
