@@ -1,0 +1,110 @@
+@model IEnumerable<test3.Controllers.AuthorBookCountViewModel>
+@{
+    ViewData["Title"] = "Thống kê số lượng sách theo tác giả";
+    var authorNames = Model.Select(m => m.Name).ToList();
+    var bookCounts = Model.Select(m => m.BookCount).ToList();
+}
+
+<div class="container py-4">
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-bar-chart-fill me-2"></i>
+        @ViewData["Title"]
+    </h2>
+
+    <!-- Biểu đồ thống kê -->
+    <div class="card mb-4 shadow-sm">
+        <div class="card-header fw-bold bg-light">Biểu đồ thống kê</div>
+        <div class="card-body">
+            <canvas id="authorChart" height="120"></canvas>
+        </div>
+    </div>
+
+    <!-- Bảng chi tiết dữ liệu -->
+    <div class="card shadow-sm">
+        <div class="card-header fw-bold bg-light">Chi tiết dữ liệu</div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="text-center" style="width: 80px;">STT</th>
+                            <th class="text-start">Tên tác giả</th>
+                            <th class="text-center" style="width: 200px;">Số lượng sách đã viết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int stt = 1;
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="text-center">@stt</td>
+                                    <td class="text-start">@item.Name</td>
+                                    <td class="text-center">@item.BookCount</td>
+                                </tr>
+                                stt++;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('authorChart').getContext('2d');
+        const authorChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(authorNames)),
+                datasets: [{
+                    label: 'Số lượng sách',
+                    data: @Html.Raw(Json.Serialize(bookCounts)),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(100, 149, 237, 0.7)',
+                        'rgba(255, 105, 180, 0.7)',
+                        'rgba(60, 179, 113, 0.7)',
+                        'rgba(128, 0, 128, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(100, 149, 237, 1)',
+                        'rgba(255, 105, 180, 1)',
+                        'rgba(60, 179, 113, 1)',
+                        'rgba(128, 0, 128, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            precision: 0
+                        }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { mode: 'index', intersect: false }
+                }
+            }
+        });
+    </script>
+}

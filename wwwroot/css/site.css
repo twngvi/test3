@@ -20,3 +20,7 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+html, body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+}

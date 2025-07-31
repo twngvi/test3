@@ -1,18 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\",
+  "WorkspaceRootPath": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|e:\\linhtalinhtinh\\bt\\aspnet\\test3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\views\\statistics\\authorbookcount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:views\\statistics\\authorbookcount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\wwwroot\\css\\vietnamese-font.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:wwwroot\\css\\vietnamese-font.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|e:\\linhtalinhtinh\\bt\\aspnet\\test3\\data\\test1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\data\\test1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:data\\test1context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|e:\\linhtalinhtinh\\bt\\aspnet\\test3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|c:\\tailieucuamintphut\\ph\u00FAc\\test3\\data\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B794F1-4CE8-4DC8-B094-2738B56F1703}|test3.csproj|solutionrelative:data\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,20 +61,36 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 723,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Bookmark",
@@ -46,24 +102,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T18:02:44.887Z",
+              "DocumentIndex": 6,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-31T18:34:13.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\appsettings.json",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\appsettings.json",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -72,16 +128,156 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T18:35:41.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorBookCount.cshtml",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Views\\Statistics\\AuthorBookCount.cshtml",
+              "RelativeDocumentMoniker": "Views\\Statistics\\AuthorBookCount.cshtml",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Views\\Statistics\\AuthorBookCount.cshtml*",
+              "RelativeToolTip": "Views\\Statistics\\AuthorBookCount.cshtml*",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAIwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T18:35:33.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T18:35:25.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAewBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-31T18:43:15.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "vietnamese-font.css",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\wwwroot\\css\\vietnamese-font.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\vietnamese-font.css",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\wwwroot\\css\\vietnamese-font.css",
+              "RelativeToolTip": "wwwroot\\css\\vietnamese-font.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-31T18:47:10.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-07-31T18:34:11.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-31T18:32:55.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "Data\\Book.cs",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Data\\Book.cs",
+              "RelativeToolTip": "Data\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T18:32:30.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Data\\Author.cs",
+              "RelativeDocumentMoniker": "Data\\Author.cs",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Data\\Author.cs",
+              "RelativeToolTip": "Data\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T18:32:28.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T18:02:44.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Test1Context.cs",
-              "DocumentMoniker": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\Data\\Test1Context.cs",
+              "DocumentMoniker": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Data\\Test1Context.cs",
               "RelativeDocumentMoniker": "Data\\Test1Context.cs",
-              "ToolTip": "E:\\linhtalinhtinh\\BT\\ASPNet\\test3\\Data\\Test1Context.cs",
+              "ToolTip": "C:\\TailieucuaMintPhut\\Ph\u00FAc\\test3\\Data\\Test1Context.cs",
               "RelativeToolTip": "Data\\Test1Context.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBUAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-31T18:02:04.264Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
